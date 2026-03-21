@@ -25,9 +25,9 @@ def character_frequency(user_input, case_sensitive=True, sort_by="char"):
 
     # Sorting logic
     if sort_by == "char":
-        sorted_items = sorted(freq_dict.items(), key=lambda x: x[0])
+        sorted_items = sorted(freq_dict.items()
     elif sort_by == "freq":
-        sorted_items = sorted(freq_dict.items(), key=lambda x: x[1], reverse=True)
+        sorted_items = sorted(freq_dict.items()
     else:
         sorted_items = freq_dict.items()
 
